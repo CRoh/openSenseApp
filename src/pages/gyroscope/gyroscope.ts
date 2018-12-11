@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController,  } from 'ionic-angular'; //NavParams wieder einfügen
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as THREE from 'three';
 
 /**
@@ -21,9 +21,9 @@ export class GyroscopePage {
 //}
 
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GyroscopePage');
-  }
+  // ionViewDidLoad() {
+  //   
+  // }
 
   /**
    * @name _DB
@@ -117,11 +117,8 @@ export class GyroscopePage {
   public _CUBE;
 
 
-
-
-  constructor(public navCtrl: NavController) { }
-
-
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
 
 
   /**
@@ -132,6 +129,7 @@ export class GyroscopePage {
    * @return {none}
    */
   ionViewDidLoad(): void {
+    console.log('ionViewDidLoad GyroscopePage');
     this.initialiseWebGLObjectAndEnvironment();
     this.renderAnimation();
   }

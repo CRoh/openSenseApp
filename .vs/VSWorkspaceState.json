@@ -8,12 +8,9 @@
     "\\src\\assets\\icon",
     "\\src\\assets\\imgs",
     "\\src\\pages",
-    "\\src\\pages\\experiments",
-    "\\src\\pages\\games",
-    "\\src\\providers",
-    "\\src\\theme",
-    "\\typings"
+    "\\src\\pages\\gyroscope",
+    "\\src\\pages\\pendulum"
   ],
-  "SelectedNode": "\\src\\app\\main.ts",
+  "SelectedNode": "\\src\\pages\\pendulum\\pendulum.html",
   "PreviewInSolutionExplorer": false
 }
